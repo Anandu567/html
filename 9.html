@@ -1,37 +1,64 @@
+
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Registration form</title>
+    <title>Registration Form</title>
 </head>
 <body>
-    <h1><center>Student Registration</center></h1>
-    <table align="center">
-        <form action="method=""">
-            <tr><td>Name:</td>
-                <td><input type="text"></td>
+
+    <h1 align="center">Student Registration</h1>
+
+    <form action="#" method="post">
+        <table align="center">
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
             </tr>
-            <tr><td>Roll no:</td>
-                <td><input type="text"></td>
+
+            <tr>
+                <td>Roll No:</td>
+                <td><input type="text" name="rollno"></td>
             </tr>
-            <tr><td>Admission number:</td>
-                <td><input type="text"></td>
+
+            <tr>
+                <td>Admission Number:</td>
+                <td><input type="text" name="admission"></td>
             </tr>
-            <tr><td>Date of birth:</td>
-                <td><input type="date"></td>
+
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob"></td>
             </tr>
-            <tr><td>sex:</td>
-                <td><input type="radio">
-                    <label>male</label>
-                    <label>female</label>
+
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <input type="radio" name="sex" value="male">
+                    <label>Male</label>
+
+                    <input type="radio" name="sex" value="female">
+                    <label>Female</label>
                 </td>
             </tr>
-            <tr><td>phone number:</td>
-                <td><input type="text"></td>
+
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phone"></td>
             </tr>
-            <tr><td>email:</td>
-                <td><input type="text"></td>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
             </tr>
+
         </table>
-        <center><input type="submit" value="submit">
-        </form>
-    </body>
-    </html>
-        
+
+        <center>
+            <input type="submit" value="Submit">
+        </center>
+
+    </form>
+
+</body>
+</html>
